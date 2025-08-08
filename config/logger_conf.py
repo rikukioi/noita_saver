@@ -1,9 +1,7 @@
 import logging
-from pathlib import Path
 from logging.handlers import RotatingFileHandler
 
-
-LOG_DIR = Path(__file__).parent / "logs"
+from config.paths import LOG_DIR
 
 
 def configure_logging(level=logging.INFO) -> None:
